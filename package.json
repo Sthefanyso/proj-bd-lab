@@ -1,0 +1,37 @@
+{
+  "name": "laboratorio-de-banco-de-dados",
+  "version": "1.0.0",
+  "description": "Backend em Node Integrado ao Mongodb",
+  "main": "index.js",
+  "type": "module",
+  "engines":{
+    "node": "16.x",
+    "npm": "9.x"  
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon api/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sthefanyso/labbd-api.git"
+  },
+  "keywords": [
+    "nodejs",
+    "mongodb",
+    "express"
+  ],
+  "author": "Sthefany Souza da Silva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sthefanyso/labbd-api.git"
+  },
+  "homepage": "https://github.com/Sthefanyso/labbd-api.git#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "mongodb": "^4.1.0",
+    "nodemon": "^3.0.1"
+  }
+}

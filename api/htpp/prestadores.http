@@ -1,0 +1,36 @@
+// Teste das Requisições REST  dos prestadores
+
+@baseURL = http://localhost:4000/api/prestadores
+
+// GET - Lista todos os registros 
+GET {{baseURL}}
+Content-Type: application/json
+
+###
+// GET - Lista um registro pelo id
+GET {{baseURL}}/id/
+Content-Type: application/json
+
+###
+// DELETE - Apaga um registro pelo id
+DELETE {{baseURL}}/
+Content-Type: application/json
+
+###
+// POST - Insere um novo registro
+POST {{baseURL}}
+Content-Type: application/json
+
+{
+    "cnpj":"29416584702134",
+    "razao_social": "ELLEN OLV ME",
+    "cnae_fiscal": 815496,
+    "nome_`fantasia": "ELLEN OLV",
+    "data_inicio_atividade": "1998-04-26",
+    "localizacao":{
+        "type": "Point",
+        "coordinates": [-18.9476, -31.6345]
+    }
+}
+// GET - Lista um registro pelo id
+GET {{baseURL}}/razao/
